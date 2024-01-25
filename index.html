@@ -28,6 +28,11 @@
           'opsz' 24
         }
     </style>
+
+    <!-- SWIPTER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     
 
     <!-- common css -->
@@ -35,39 +40,87 @@
     <!-- index css -->
     <link rel="stylesheet" href="./css/index.css">
     
-    <!-- JS -->
-    <script src="./js/common.js"></script>
+
+
 </head>
 <body>
 
     <div class="wrapper">
-        <header>
-            <div class="top-header object-fit">
-                <div class="left">
-                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><span class="material-symbols-outlined">menu</span></a>  
-                </div>
-                <div class="center">
-                    <input type="text" placeholder="무엇을 하고 놀까요?" class="form-control">    
-                    <span class="material-symbols-outlined">search</span>
-                </div>
-                <div class="right">
-                        <a href="javascript:void(0)">
-                        <span class="material-symbols-outlined">shopping_cart</span>
-                    </a>
-                </div>
-            </div>
-            <nav class="object-fit"> </nav>
-        </header>
-    </div>
-    <main>
-        <section class="main-banner">
+          <header>
+              <div class="top-header object-fit">
+                  <div class="left">
+                      <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><span class="material-symbols-outlined">menu</span></a>  
+                  </div>
+                  <div class="center">
+                      <input type="text" placeholder="무엇을 하고 놀까요?" class="form-control">    
+                      <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <div class="right">
+                          <a href="javascript:void(0)">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                          </a>
+                  </div>
+              </div>
+              
+              
+              <nav class="object-fit"> 
+                <ul class="nav-menu">
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                  <li><a href=""><span class="material-symbols-outlined">apartment</span></a></li>
+                </ul>
+              </nav>
 
+          </header>
+      <main>
+        <section class="main-banner">
+          <!-- Slider main container -->
+          <div class="swiper object-fit">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/22/16/65ae97290e6e67.37239327.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/22/14/65ae7a120e58b4.32889810.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/22/14/65ae794f06cf16.48491922.png"></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/24/11/65b0f6a23620c5.46447190.png"></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/02/14/659419903cfab8.55846063.png"></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/19/14/65aa87a64bcfc2.65699623.png"></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/19/13/65aa7ff0dccbd2.83746801.png"></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/18/16/65a95488d44690.87638250.png"></div>
+              <div class="swiper-slide"><img src="https://yaimg.yanolja.com/v5/2024/01/19/14/65aa87a64bcfc2.65699623.png"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+          </div>
+
+          
+           <!-- If we need pagination -->
+          <div class="swiper-pagination object-fit"></div>
+          
         </section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer></footer>
+
+          <section>
+           
+              
+          
+          </section>
+          <section></section>
+      </main>
+      <footer>
+
+
+      </footer>
     
+    </div>
 
     <!-- 오픈캔버스(LEFT)  -->
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -92,5 +145,14 @@
         </div>
       </div>
 
+      
+      
+      
+
+
+    <!-- common.js -->
+    <script src="./js/common.js"defer></script>
+    <!-- index.js -->
+    <script src="./js/index.js" defer></script>
 </body>
 </html>

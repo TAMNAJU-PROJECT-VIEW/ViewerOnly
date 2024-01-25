@@ -80,8 +80,175 @@ body{
 }
 
 
+.wrapper>header>nav>.nav-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+
+    position:relative;
+
+    height : 100%;
+}
+.wrapper>header>nav>.nav-menu>li{
+    flex-basis: 25%;
+    align-self: stretch;
+    /* border : 1px solid; */
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.wrapper>header>nav>.nav-menu>li>a{
+    display:block;
+    text-decoration: none;
+    color:black;
+}
+.wrapper>header>nav>.nav-menu>li>a>span{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size:3rem;
+
+    position:relative;
+}
+
+.wrapper>header>nav>.nav-menu>li>a>span::after{
+    content : "";
+    display:block;
+    width : 100%;
+    height : 15px;
+    /* border : 1px solid ; */
+    font-size:.6rem;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+}
+.wrapper>header>nav>.nav-menu>li:nth-child(1)>a>span::after{
+    content:'호텔/리조트';
+}
+.wrapper>header>nav>.nav-menu>li:nth-child(2) >a>span::after
+{content:'팬션/풀빌라';}
+.wrapper>header>nav>.nav-menu>li:nth-child(3) >a>span::after
+{content:'가족형숙소';}
+.wrapper>header>nav>.nav-menu>li:nth-child(4) >a>span::after
+{content:'모텔';}
+.wrapper>header>nav>.nav-menu>li:nth-child(5) >a>span::after
+{content:'항공';}
+.wrapper>header>nav>.nav-menu>li:nth-child(6) >a>span::after
+{content:'해외숙소';}
+.wrapper>header>nav>.nav-menu>li:nth-child(7) >a>span::after
+{content:'교통';}
+.wrapper>header>nav>.nav-menu>li:nth-child(8) >a>span::after
+{content:'레저/티켓';}
+
+
+
 .wrapper>main{}
 .wrapper>main>section{}
+.wrapper>main>section.main-banner{
+    
+    border : 1px solid;
+    height : 120px;
+    background-color: aquamarine;
+    
+
+}
+.wrapper>main>section.main-banner>.swiper{
+
+   height : 100px;
+    /* border : 4px solid; */
+}
+    
+
+.wrapper>main>section.main-banner>.swiper>.swiper-wrapper{
+    position:relative;
+    width : 100%;
+    
+}
+.wrapper>main>section.main-banner>.swiper>.swiper-wrapper>.swiper-slide{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border : 1px solid gray; */
+    padding : 5px;
+    
+    
+    
+    background-color : white;
+    
+   
+    
+}
+.wrapper>main>section.main-banner>.swiper>.swiper-wrapper>.swiper-slide img{
+    width : 100%;
+    height : 100%;
+    object-fit: contain;;
+}
+
+.wrapper>main>section.main-banner>.swiper .swiper-button-prev,
+.wrapper>main>section.main-banner>.swiper .swiper-button-next{
+    /* border : 1px solid; */
+    width : 45px;
+    height : 45px;
+    color:white;
+    font-weight:400;
+    background-color:lightgray;
+}
+
+.wrapper>main>section.main-banner>.swiper .swiper-button-prev::after,
+.wrapper>main>section.main-banner>.swiper .swiper-button-next::after{
+    font-size:1.5rem;
+}
+
+.wrapper>main>section.main-banner .swiper-pagination{
+    font-size:.6rem;
+    /* border : 1px solid; */
+  
+    position:relative;
+    margin : 0 auto;
+    background-color: red;
+    height:20px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+
+    position:relative;
+    top:0px;
+    letter-spacing: 7px;
+    
+    
+}
+
+.wrapper>main>section.main-banner .swiper-pagination::before{
+    content:"<";
+    display:inline-block;
+    width : 20px;
+
+    cursor: pointer;
+    
+}
+.wrapper>main>section.main-banner .swiper-pagination::after{
+    content:">";
+    display:inline-block;
+    width : 20px;
+    
+    cursor: pointer;
+}
 
 
 .wrapper>footer{}
