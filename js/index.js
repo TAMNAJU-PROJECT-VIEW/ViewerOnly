@@ -15,6 +15,7 @@ const swiper = new Swiper('.main-banner .swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      type: 'fraction', // 숫자로 표시하는 타입 설정
     },
   
     // Navigation arrows
@@ -24,13 +25,9 @@ const swiper = new Swiper('.main-banner .swiper', {
     },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
   });
 
 
-
-  console.log('index.js..')
-  console.log('index.js.... swiper : ');
-  console.log( swiper);
